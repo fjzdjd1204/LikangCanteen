@@ -1,0 +1,46 @@
+<!-- index.wxml -->
+<view class="page-body">
+  <view>订饭时间 [9:00一10:00] 错过订饭时间不送。以下菜品可拼盒饭10元1份，两菜一米饭主食</view>
+  <view class="page-section">
+    <view class="weui-cells__title">午餐菜谱（选择一）</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">当前选择</view>
+        </view>
+        <view class="weui-cell__bd">
+          <picker bindchange="bindPickerChangeOne" value="{{selectone}}" range="{{array}}">
+            <view class="weui-input">{{array[selectone]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__title">午餐菜谱（选择二）</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">当前选择</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindPickerChangeTwo" value="{{selecttwo}}" range="{{array}}">
+          <view class="weui-input">{{array[selecttwo]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells__title">主食</view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">当前选择</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindPickerChangeThree" value="{{selectthree}}" range="{{lists}}">
+          <view class="weui-input">{{lists[selectthree]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <button class="order" bindtap="bindViewTap" type="primary" plain="true">确认订单</button>
+</view>

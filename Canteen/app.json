@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs", 
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "唐山利康医院员工食堂",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#1AAD19",
+    "backgroundColor": "#F1F1F1",
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/image/index_dark.png",
+      "selectedIconPath": "/image/index.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "/image/user_dark.png",
+      "selectedIconPath": "/image/user.png"
+    }
+   ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

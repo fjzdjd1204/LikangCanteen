@@ -1,0 +1,59 @@
+<!-- logs.wxml -->
+<view class="page-body">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="page-section">
+      <view class="weui-cells__title">输入收货信息</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <input class="weui-input" auto-focus placeholder="三楼，行政办公室，信息科，王建" />
+        </view>
+      </view>
+    </view>
+    <view class="launch_detail">
+      <text>香菇鸡块</text>
+      <view class="iconfont icon-money">10</view>
+    </view>
+    <view class="launch_detail">
+      <text>尖椒豆片</text>
+      <view class="iconfont icon-money">10</view>
+    </view>
+    <view class="launch_detail">
+      <text>米饭</text>
+      <view class="iconfont icon-money">2</view>
+    </view>
+    <view class="launch_detail">
+      <text>打包费</text>
+      <view class="iconfont icon-money">5</view>
+    </view>
+    <view class="launch_detail">
+      <text>优惠规则</text>
+      <label class="checkbox">
+        <checkbox value="cb" checked="true" />
+        盒饭
+      </label>
+    </view>
+    <view class="launch_detail">
+      <text>小计</text>
+      <view class="iconfont icon-money">10</view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="备注信息..." />
+      </view>
+    </view>
+    <view class="btn-area">
+      <button type="primary" formType="submit">支付</button>
+
+      <button style="margin-top:30px" formType="reset">取消</button>
+    </view>
+  </form>
+</view>
+
+<!-- <template name="order_detail">
+    <view class="launch_detail">
+      <view>香菇鸡块</view>
+      <view class="iconfont icon-money">10</view>
+    </view>
+</template>
+
+<template is="select_one" data="{{}}"/> -->
